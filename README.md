@@ -11,7 +11,7 @@ It support environment switching (`DEV` vs `PROD`) and integration with **Thinkb
 - 🔧 Sets the Blender compute device to **OPTIX** (NVIDIA) or **HIP** (AMD)
 - ✅ Enables only the GPU(s) in the render device list
 - ❌ Disables CPU rendering if a GPU is available
-- 📁 Loads configuration dynamically from local or network folders, depending on environment
+- 📁 Loads configuration dynamically from local or network folders, depending on environment if you launch blender with the bat file
 - 🧵 Compatible with **Blender 4.2+**
 - ☁️ Works seamlessly with **Deadline render nodes**
 
@@ -22,7 +22,10 @@ It support environment switching (`DEV` vs `PROD`) and integration with **Thinkb
 ```
 /
 ├── blenderconfig/
-│   └── [set_render_engine.py](blenderconfig/set_render_engine.py)   ← Blender GPU detection + setup
+│   └── userpref.blend for collected plugins and scripts   ← Blender GPU detection + setup
+├── blenderscript/
+│   └── BlenderForceGpuConfig.py   ← Blender GPU detection + setup
+│   └── all yours scripts and plugins install through blender if you execute blender with .bat file.
 ├── config.env                                                       ← Environment flag (DEV or PROD)
 ├── [launch_blender.bat](launch_blender.bat)                         ← Main launcher script
 └── README.md
