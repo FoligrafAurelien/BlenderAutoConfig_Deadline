@@ -1,6 +1,7 @@
 # 🧠 Blender GPU Auto-Configurator (Deadline Compatible)
 
-This project provides an automated way to **configure Blender's render device settings based on GPU type**, with support for environment switching (`DEV` vs `PROD`) and integration with **Thinkbox Deadline** render farms.
+This project provides an automated way to **configure Blender's render device settings based on GPU type**, and a files system through the network for the plugins. It can simplify the installation of your plugins and scripts Blender for your render farm.
+It support environment switching (`DEV` vs `PROD`) and integration with **Thinkbox Deadline** render farms.
 
 ---
 
