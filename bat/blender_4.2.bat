@@ -24,12 +24,7 @@ set "ENV_STATE=%ENV_STATE: =%"
 echo Environment state: %ENV_STATE%
 
 :: Maybe useless, check for the futur to optimize
-if /I "%ENV_STATE%"=="DEV" (
-    set "CONFIG_PATH=..\"
-) else (
-    set "CONFIG_PATH=\\192.168.120.15\DeadlineRepository10\custom\"
-)
-
+set "CONFIG_PATH=..\"
 :: Debug
 :: echo État détecté : %ENV_STATE%
 :: echo Chemin configuré : %CONFIG_PATH%
