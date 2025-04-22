@@ -2,4 +2,4 @@
 blenderscripts/*
 
 # But do not ignore the folder itself
-!blenderscripts/
+!blenderscripts/BlenderForceGpuConfig.py
