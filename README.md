@@ -41,11 +41,6 @@ This file controls where Blender loads its config/scripts from:
 STATE = DEV
 ```
 
-| Value | Behavior |
-|-------|----------|
-| `DEV`  | Use relative path: `../blenderconfig` |
-| `PROD` | Use shared path: `\\192.168.120.15\DeadlineRepository10\custom\blenderconfig` |
-
 You can version this file per machine or configure via deployment tools.
 
 ---
