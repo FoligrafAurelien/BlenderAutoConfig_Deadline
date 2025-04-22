@@ -129,5 +129,5 @@ MIT — use freely in commercial or personal render pipelines.
 
 ## 🙌 Credits
 
-Developed by **[Your Name / Studio]**  
+Developed by **Aurélien Binauld for le Fresnoy**  
 Optimized for scalability, simplicity, and render farm automation.
