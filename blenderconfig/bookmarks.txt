@@ -1,0 +1,4 @@
+[Bookmarks]
+[Recent]
+C:\Users\adminpolevideo\Desktop\
+\\192.168.120.15\DeadlineRepository10\custom\blenderscripts\
