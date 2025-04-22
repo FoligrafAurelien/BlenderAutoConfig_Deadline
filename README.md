@@ -84,8 +84,7 @@ This Python script:
 You can call `launch_blender.bat` as a pre-render script or integrate it into your **Deadline job submission system** to ensure all render nodes configure themselves automatically.
 
 Example Deadline paths:
-- Place the Python script in:  
-  `\\192.168.120.15\DeadlineRepository10\custom\blenderconfig\set_render_engine.py`
+- Place the Python script in:  DEADLINE_REPOSITORY\custom\blenderconfig\set_render_engine.py`
 - Call it from a Deadline event plugin or via a **Pre Load Script** on Blender jobs.
 
 ---
