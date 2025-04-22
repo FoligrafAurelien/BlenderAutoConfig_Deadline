@@ -41,7 +41,6 @@ This file controls where Blender loads its config/scripts from:
 STATE = DEV
 ```
 
-You can version this file per machine or configure via deployment tools.
 
 ---
 
@@ -99,14 +98,6 @@ Disabled: CPU
 
 ---
 
-## 🖼️ Screenshots (Optional)
-
-You can include:
-- ✅ Screenshot of Blender → Preferences → System → Cycles Devices with GPU active
-- 📁 Explorer view showing `config.env` and folder structure
-- 🖥️ Render log output from Deadline with detection info
-
----
 
 ## ✅ Requirements
 
