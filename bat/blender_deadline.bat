@@ -50,5 +50,16 @@ set "BLENDER_USER_SCRIPTS=%CONFIG_PATH%\blenderscripts"
 if not exist "%BLENDER_USER_CONFIG%" mkdir "%BLENDER_USER_CONFIG%"
 if not exist "%BLENDER_USER_SCRIPTS%" mkdir "%BLENDER_USER_SCRIPTS%"
 
+:: Define log directory (can be adjusted)
+set "LOG_DIR=%CONFIG_PATH%\logs"
+if not exist "%LOG_DIR%" mkdir "%LOG_DIR%"
+
+:: Build log file name using timestamp
+for /f %%i in ('wmic os get localdatetime ^| find "."') do set "TS=%%i"
+set "TS=%TS:~0,8%_%TS:~8,6%"
+set "LOG_FILE=%LOG_DIR%\render_%TS%.log"
+
 :: Launch Blender with script
-start "" "C:\Program Files\Blender Foundation\%FolderName%\blender.exe" --python "%BLENDER_USER_SCRIPTS%\BlenderForceGpuConfig.py" %*
+echo Launching: "C:\Program Files\Blender Foundation\%FolderName%\blender.exe"
+
+start /wait "" "C:\Program Files\Blender Foundation\%FolderName%\blender.exe" --python "%BLENDER_USER_SCRIPTS%\BlenderForceGpuConfig.py" %*
