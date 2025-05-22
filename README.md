@@ -21,9 +21,9 @@ It support environment switching (`DEV` vs `PROD`) and integration with **Thinkb
 
 ```
 /
-├── blenderconfig/
+├── Deadline10Repo\custom\Blender\BlenderBase\blenderconfig/
 │   └── userpref.blend for collected plugins and scripts   ← Blender GPU detection + setup
-├── blenderscript/
+├── Deadline10Repo\custom\Blender\BlenderBase\blenderscript/
 │   └── BlenderForceGpuConfig.py   ← Blender GPU detection + setup
 │   └── all yours scripts and plugins install through blender if you execute blender with .bat file.
 ├── config.env                                                       ← Environment flag (DEV or PROD)
