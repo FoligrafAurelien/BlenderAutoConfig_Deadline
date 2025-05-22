@@ -51,4 +51,4 @@ if not exist "%BLENDER_USER_CONFIG%" mkdir "%BLENDER_USER_CONFIG%"
 if not exist "%BLENDER_USER_SCRIPTS%" mkdir "%BLENDER_USER_SCRIPTS%"
 
 :: Launch Blender with script
-start "" "C:\Program Files\Blender Foundation\%FolderName%\blender.exe" --python "%BLENDER_USER_SCRIPTS%\BlenderForceGpuConfig.py"
+start "" "C:\Program Files\Blender Foundation\%FolderName%\blender.exe" --python "%BLENDER_USER_SCRIPTS%\BlenderForceGpuConfig.py" %*
