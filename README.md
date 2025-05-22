@@ -55,7 +55,7 @@ This script does the following:
 
 ```bat
 :: Example usage
-start "" "C:\Program Files\Blender Foundation\Blender 4.2\blender.exe" --python "%BLENDER_USER_CONFIG%\set_render_engine.py"
+start /wait "" "C:\Program Files\Blender Foundation\Blender 4.2\blender.exe" --python "%BLENDER_USER_CONFIG%\set_render_engine.py" %* (an example is now on the github)
 ```
 
 ---
