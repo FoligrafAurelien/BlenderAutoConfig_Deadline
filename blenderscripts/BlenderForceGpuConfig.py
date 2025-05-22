@@ -14,11 +14,20 @@ def detect_gpu_brand():
         gpus = result.stdout.split('\n')
         gpu_names = [line.strip() for line in gpus if line.strip() and "Name" not in line]
         for gpu in gpu_names:
-            if 'NVIDIA' in gpu.upper() and 'RTX' in gpu.upper():
+            name = gpu.upper()
+
+            # Ignore iGPU / embedded / non-Cycles-compatible GPUs
+            if "INTEL" in name:
+                continue
+            if "RADEON(TM)" in name:  # Often integrated
+                continue
+            if "VEGA" in name and "MOBILE" in name:
+                continue
+
+            if "NVIDIA" in name and "RTX" in name:
                 return 'OPTIX'
-            elif 'AMD' in gpu.upper():
+            elif "AMD RADEON" in name:
                 return 'HIP'
-        return 'CPU'
     except Exception as e:
         print(f"Erreur lors de la détection GPU: {e}")
         return 'CPU'
