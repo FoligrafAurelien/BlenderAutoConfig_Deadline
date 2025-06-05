@@ -43,8 +43,8 @@ if not exist "%CONFIG_PATH%" (
 )
 
 :: Set Blender config and scripts path
-set "BLENDER_USER_CONFIG=%CONFIG_PATH%\%FolderName%\blenderconfig"
-set "BLENDER_USER_SCRIPTS=%CONFIG_PATH%\%FolderName%\blenderscripts"
+set "BLENDER_USER_CONFIG=%CONFIG_PATH%\blenderconfig"
+set "BLENDER_USER_SCRIPTS=%CONFIG_PATH%\blenderscripts"
 
 :: Create folders if missing
 if not exist "%BLENDER_USER_CONFIG%" mkdir "%BLENDER_USER_CONFIG%"
