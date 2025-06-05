@@ -1,8 +1,6 @@
 import bpy
 import subprocess
 
-bpy.ops.wm.console_toggle()
-
 def is_valid_gpu_name(name: str) -> bool:
     name = name.upper()
     if "INTEL" in name:
